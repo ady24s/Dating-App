@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preferences</title>
+    <style>
+        form {
+            margin: auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px #ccc;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Match Preferences</h2>
+    <form action="/match" method="post">
+        <label for="age">Desired Age:</label>
+        <input type="number" name="age" id="age" placeholder="Enter desired age" required>
+
+        <label for="status">Desired Status:</label>
+        <input type="text" name="status" id="status" placeholder="e.g., Single, Divorced" required>
+
+        <label for="gender">Desired Gender:</label>
+        <input type="text" name="gender" id="gender" placeholder="e.g., Male, Female" required>
+
+        <label for="orientation">Desired Orientation:</label>
+        <input type="text" name="orientation" id="orientation" placeholder="e.g., Straight, Gay" required>
+
+        <label for="relationship">Desired Relationship Type:</label>
+        <input type="text" name="relationship" id="relationship" placeholder="e.g., Long-term, Casual" required>
+
+        <input type="submit" value="Find Matches">
+    </form>
+</body>
+</html>
