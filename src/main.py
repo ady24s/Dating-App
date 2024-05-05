@@ -1,9 +1,10 @@
 import os
 import pandas as pd
-from flask import Flask, request, render_template, redirect, url_for
-from matchalgo import get_combined_recommendations
+from flask import Flask, request, render_template, redirect, url_for, session, flash
+from matchalgo import get_combined_recommendations, get_user_id_from_credentials
 
 app = Flask(__name__)
+app.secret_key = 'some_secret_key'  # For session management
 
 # Resolve the base directory and absolute path for `data.csv`
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,41 +17,64 @@ user_data = pd.read_csv(data_path)
 def homepage():
     return render_template('homepage.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html')
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
 
-@app.route('/preference', methods=['POST'])
-def preferences():
-    email = request.form['email']
-    password = request.form['password']
-
-    # Check if the email and password match any in the dataset
-    matched = user_data[(user_data['email'] == email) & (user_data['password'] == password)]
-    if not matched.empty:
-        return render_template('preference.html')
+        try:
+            # Retrieve the user ID based on credentials
+            user_id = get_user_id_from_credentials(user_data, email, password)
+            session['user_id'] = int(user_id) # Store the user ID in the session
+            return render_template('preference.html')
+        except ValueError:
+            flash('Invalid email or password. Please try again.')
+            return render_template('login.html')
     else:
-        # If incorrect, redirect to login
-        return redirect(url_for('login'))
+        return render_template('login.html')
+
+@app.route('/preference')
+def preferences():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))  # Redirect to login if user is not logged in
+
+    # Add a debug statement to check session information
+    print(f"User ID from session: {session['user_id']}")
+
+    # Render the preference page
+    return render_template('preference.html')
 
 
 @app.route('/match', methods=['POST'])
 def match():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+
+    # Get preferences from the form
     desired_age = int(request.form['age'])
     desired_status = request.form['status']
     desired_gender = request.form['gender']
     desired_orientation = request.form['orientation']
     desired_relationship = request.form['relationship']
 
-    # Generate matching profiles with the absolute path to `data.csv`
-    recomm_profiles = get_combined_recommendations(
-        data_path,
-        desired_age,
-        desired_status,
-        desired_gender,
-        desired_orientation,
-        desired_relationship
-    )
+    # Retrieve the user ID from the session
+    user_id = session['user_id']
+
+    # Generate matching profiles
+    try:
+        recomm_profiles = get_combined_recommendations(
+            data_path,
+            user_id,
+            desired_age,
+            desired_status,
+            desired_gender,
+            desired_orientation,
+            desired_relationship
+        )
+    except Exception as e:
+        flash(str(e))
+        return redirect(url_for('preference'))
 
     return render_template('match.html', profiles=recomm_profiles.to_html(index=False))
 

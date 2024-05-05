@@ -51,12 +51,13 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="/preference" method="post">
+        <!-- Update the action URL to the `/login` route -->
+        <form action="/login" method="post">
             <input type="email" name="email" placeholder="Enter your email" required>
             <input type="password" name="password" placeholder="Enter your password" required>
-            <button type="submit">Login</button>
-        </form>
+            <a href="/preference"><button type="submit">Login</button></a>
 
+        </form>
     </div>
 </body>
 </html>
