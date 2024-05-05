@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Match Results</title>
 </head>
 <body>
-    <h1>Top Matches</h1>
-    {{ profiles | safe }}
-    <a href="/"><button>Back to Login</button></a>
+    <h2>Matching Profiles</h2>
+    <div>
+        {{ profiles | safe }}
+    </div>
+    <a href="/preference">Back to Preferences</a>
 </body>
 </html>

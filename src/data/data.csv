@@ -1,4 +1,4 @@
-user_id,name,email,password,age,status,sex,orientation,essay0,relationship_type
+user_id,name,email,password,age,status,gender,orientation,essay0,relationship_type
 1,Vijay Seth,vijay.seth@example.com,password001,37,taken,female,homo,Looking for a kind-hearted person who is active in local community services and social causes,relationship
 2,Gautam Chowdhury,gautam.chowdhury@mail.com,password002,50,single,male,homo,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship
 3,Sanjay Reddy,sanjay.reddy@example.com,password003,43,single,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,friendship

@@ -32,25 +32,30 @@
             background-color: #45a049;
         }
     </style>
+    <script>
+        // Automatically submit the form when the desired gender changes
+        function updateOrientation() {
+            document.getElementById('preferenceForm').submit();
+        }
+    </script>
 </head>
 <body>
     <h2 style="text-align: center;">Match Preferences</h2>
-    <form action="/match" method="post">
-
+    <form id="preferenceForm" action="/match" method="post">
         <label for="age">Desired Age:</label>
-        <input type="number" name="age" id="age" placeholder="Enter desired age" required>
+        <input type="number" name="age" id="age" value="{{ age }}" placeholder="Enter desired age" required>
 
         <label for="status">Desired Status:</label>
-        <input type="text" name="status" id="status" placeholder="e.g., Single, Divorced" required>
+        <input type="text" name="status" id="status" value="{{ status }}" placeholder="e.g., Single, Divorced" required>
 
-        <label for="sex">Desired Gender:</label>
-        <input type="text" name="gender" id="gender" placeholder="Male, Female" required>
+        <label for="gender">Desired Gender:</label>
+        <input type="text" name="gender" id="gender" value="{{ desired_gender }}" placeholder="Male, Female" required onchange="updateOrientation()">
 
         <label for="orientation">Desired Orientation:</label>
-        <input type="text" name="orientation" id="orientation" placeholder="Straight or Homo" required>
+        <input type="text" name="orientation" id="orientation" value="{{ orientation }}" readonly>
 
-        <label for="relationship_type">What are you looking for as an outcome:</label>
-        <input type="text" name="relationship" id="relationship" placeholder="Friendship, Relationship" required>
+        <label for="relationship">What are you looking for as an outcome:</label>
+        <input type="text" name="relationship" id="relationship" value="{{ relationship }}" placeholder="Friendship, Relationship" required>
 
         <input type="submit" value="Find Matches">
     </form>
