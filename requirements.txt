@@ -2,6 +2,5 @@ Flask
 Werkzeug
 numpy
 pandas
-python-dateutil
 scikit-learn
 scipy
