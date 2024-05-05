@@ -20,7 +20,7 @@ def homepage():
 def login():
     return render_template('login.html')
 
-@app.route('/preferences', methods=['POST'])
+@app.route('/preference', methods=['POST'])
 def preferences():
     email = request.form['email']
     password = request.form['password']
@@ -32,6 +32,7 @@ def preferences():
     else:
         # If incorrect, redirect to login
         return redirect(url_for('login'))
+
 
 @app.route('/match', methods=['POST'])
 def match():
