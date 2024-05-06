@@ -49,10 +49,10 @@
         <input type="text" name="status" id="status" value="{{ status }}" placeholder="e.g., Single, Divorced" required>
 
         <label for="gender">Desired Gender:</label>
-        <input type="text" name="gender" id="gender" value="{{ desired_gender }}" placeholder="Male, Female" required onchange="updateOrientation()">
+        <input type="text" name="gender" id="gender" value="{{ desired_gender }}" placeholder="Male, Female" required>
 
         <label for="orientation">Desired Orientation:</label>
-        <input type="text" name="orientation" id="orientation" value="{{ orientation }}" readonly>
+        <input type="text" name="orientation" id="orientation" value="{{ orientation }}" placeholder="straight,homo" required>
 
         <label for="relationship">What are you looking for as an outcome:</label>
         <input type="text" name="relationship" id="relationship" value="{{ relationship }}" placeholder="Friendship, Relationship" required>

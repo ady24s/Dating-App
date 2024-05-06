@@ -63,12 +63,6 @@ def preferences():
         status = request.form.get('status', '')
         relationship = request.form.get('relationship', '')
 
-        # Automatically determine orientation based on user and desired gender
-        if user_gender == desired_gender:
-            orientation = 'homo'
-        else:
-            orientation = 'straight'
-
     return render_template('preference.html', age=age, status=status, desired_gender=desired_gender, orientation=orientation, relationship=relationship)
 
 
