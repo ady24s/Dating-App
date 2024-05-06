@@ -48,22 +48,37 @@ def login():
 
 @app.route('/preference', methods=['GET', 'POST'])
 def preferences():
-    """ Set user preferences with automatic orientation determination """
+    """ Set user preferences with automatic relationship determination """
     if 'user_id' not in session or 'gender' not in session:
         return redirect(url_for('login'))
 
+    user_id = session['user_id']
     user_gender = session['gender']
     desired_gender = ''
-    orientation = ''
-    age = status = relationship = ''
+    desired_orientation = ''
+    desired_age = ''
+    desired_status = ''
+    desired_relationship = ''
+
+    # Get the logged-in user's actual status from the data
+    user_row = user_data[user_data['user_id'] == user_id]
+    if not user_row.empty:
+        actual_status = user_row['status'].values[0].lower()
+        # Automatically set relationship to "Friendship" if actual status is "taken"
+        if actual_status == 'taken':
+            desired_relationship = 'Friendship'
 
     if request.method == 'POST':
         desired_gender = request.form['gender'].lower()
-        age = request.form.get('age', '')
-        status = request.form.get('status', '')
-        relationship = request.form.get('relationship', '')
+        desired_orientation = request.form.get('orientation', '')
+        desired_age = request.form.get('age', '')
+        desired_status = request.form.get('status', '')  # Let the user input their desired status
+        # If the user has chosen something other than "taken," retain their input
+        if actual_status != 'taken':
+            desired_relationship = request.form.get('relationship', '')
 
-    return render_template('preference.html', age=age, status=status, desired_gender=desired_gender, orientation=orientation, relationship=relationship)
+    return render_template('preference.html', age=desired_age, status=desired_status, desired_gender=desired_gender, orientation=desired_orientation, relationship=desired_relationship)
+
 
 
 @app.route('/match', methods=['POST'])

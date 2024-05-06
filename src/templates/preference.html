@@ -33,10 +33,23 @@
         }
     </style>
     <script>
-        // Automatically submit the form when the desired gender changes
-        function updateOrientation() {
-            document.getElementById('preferenceForm').submit();
+        // Automatically set the relationship field to "Friendship" if status is "taken"
+        function updateRelationshipField() {
+            var statusField = document.getElementById('status');
+            var relationshipField = document.getElementById('relationship');
+
+            // If the user's status is "taken," lock relationship to "Friendship"
+            if (statusField.value.toLowerCase() === 'taken') {
+                relationshipField.value = 'Friendship';
+                relationshipField.readOnly = true;
+            } else {
+                relationshipField.readOnly = false;
+                relationshipField.placeholder = "Friendship, Relationship";
+            }
         }
+
+        // Execute the function when the page loads and whenever the status field changes
+        window.onload = updateRelationshipField;
     </script>
 </head>
 <body>
@@ -46,15 +59,15 @@
         <input type="number" name="age" id="age" value="{{ age }}" placeholder="Enter desired age" required>
 
         <label for="status">Desired Status:</label>
-        <input type="text" name="status" id="status" value="{{ status }}" placeholder="e.g., Single, Divorced" required>
+        <input type="text" name="status" id="status" value="{{ status }}" placeholder="e.g., Single, Taken" oninput="updateRelationshipField()" required>
 
         <label for="gender">Desired Gender:</label>
         <input type="text" name="gender" id="gender" value="{{ desired_gender }}" placeholder="Male, Female" required>
 
         <label for="orientation">Desired Orientation:</label>
-        <input type="text" name="orientation" id="orientation" value="{{ orientation }}" placeholder="straight,homo" required>
+        <input type="text" name="orientation" id="orientation" value="{{ orientation }}" placeholder="Straight, Homo" required>
 
-        <label for="relationship">What are you looking for as an outcome:</label>
+        <label for="relationship">Desired Relationship:</label>
         <input type="text" name="relationship" id="relationship" value="{{ relationship }}" placeholder="Friendship, Relationship" required>
 
         <input type="submit" value="Find Matches">
