@@ -20,18 +20,24 @@ def homepage():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    """ Login route for user authentication """
+    """Login route for user authentication."""
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
+        aadhaar = int(request.form['aadhaar'])
 
         try:
-            # Retrieve user data based on credentials
-            user_row = user_data[(user_data['email'] == email) & (user_data['password'] == password)]
-            if user_row.empty:
-                raise ValueError("Invalid email or password")
+            # Retrieve user data based on credentials and Aadhaar number
+            user_row = user_data[
+                (user_data['email'] == email) &
+                (user_data['password'] == password) &
+                (user_data['aadhaar'] == aadhaar)
+            ]
 
-            # Extract user ID and gender for session storage
+            if user_row.empty:
+                raise ValueError("Invalid email, password, or Aadhaar number")
+
+            # Extract user details for session storage
             user_id = int(user_row['user_id'].values[0])
             user_gender = user_row['gender'].values[0].lower()
 
@@ -39,12 +45,14 @@ def login():
             session['user_id'] = user_id
             session['gender'] = user_gender
 
+            # Redirect to the preference page after a successful login
             return redirect(url_for('preferences'))
         except ValueError:
-            flash('Invalid email or password. Please try again.')
+            flash('Invalid email, password, or Aadhaar number. Please try again.')
             return render_template('login.html')
     else:
         return render_template('login.html')
+
 
 @app.route('/preference', methods=['GET', 'POST'])
 def preferences():

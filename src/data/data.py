@@ -1,10 +1,11 @@
 import pandas as pd
 import numpy as np
+import string
 
 # Setting seed for reproducibility
 np.random.seed(42)
 
-# Generate random names
+# Helper function to generate random Indian names
 def generate_names(n):
     first_names = ["Amit", "Priya", "Deepak", "Anjali", "Rajesh", "Sunita", "Vijay", "Deepika", "Karan", "Pooja",
                    "Sanjay", "Rani", "Arjun", "Meera", "Suresh", "Kavita", "Nikhil", "Simran", "Rahul", "Neha",
@@ -13,16 +14,6 @@ def generate_names(n):
                   "Paul", "Bose", "Nair", "Rao", "Chowdhury", "Mishra", "Verma", "Iyer", "Malhotra", "Seth"]
     names = [np.random.choice(first_names) + " " + np.random.choice(last_names) for _ in range(n)]
     return names
-
-# Generate random emails
-def generate_emails(names):
-    domains = ["example.com", "mail.com", "provider.org"]
-    emails = [name.replace(" ", ".").lower() + "@" + np.random.choice(domains) for name in names]
-    return emails
-
-# Generate random passwords
-def generate_passwords(n):
-    return ['password' + str(i).zfill(3) for i in range(1, n + 1)]
 
 # Generate random ages
 def generate_ages(n):
@@ -62,19 +53,34 @@ def generate_relationship_types(n):
     relationship_types = ["friendship", "relationship"]
     return np.random.choice(relationship_types, n)
 
-# Create a DataFrame with appropriate columns
+# Generate random 12-digit Aadhaar numbers
+def generate_aadhaar_numbers(n):
+    return [''.join(np.random.choice(list('0123456789'), size=12)) for _ in range(n)]
+
+# Generate random emails
+def generate_emails(names):
+    return [name.lower().replace(' ', '.') + "@gmail.com" for name in names]
+
+# Generate random passwords
+def generate_passwords(n):
+    characters = string.ascii_letters + string.digits
+    return [''.join(np.random.choice(list(characters), size=8)) for _ in range(n)]
+
+# Create data for the DataFrame
 names = generate_names(100)
+
 data = {
     'user_id': range(1, 101),
     'name': names,
-    'email': generate_emails(names),
-    'password': generate_passwords(100),
     'age': generate_ages(100),
     'status': generate_statuses(100),
-    'sex': generate_genders(100),
+    'gender': generate_genders(100),
     'orientation': generate_orientations(100),
-    'essay0': generate_essays(100),
-    'relationship_type': generate_relationship_types(100)
+    'essay': generate_essays(100),
+    'relationship_type': generate_relationship_types(100),
+    'aadhaar': generate_aadhaar_numbers(100),
+    'email': generate_emails(names),
+    'password': generate_passwords(100)
 }
 
 # Convert to DataFrame
@@ -83,5 +89,5 @@ df = pd.DataFrame(data)
 # Display the DataFrame
 print(df.head(10))  # Displaying only the first 10 for brevity
 
-# Optionally save to CSV
-df.to_csv('src/data/data.csv', index=False)
+# Save to CSV
+df.to_csv('data.csv', index=False)

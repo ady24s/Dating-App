@@ -1,0 +1,101 @@
+user_id,name,age,status,gender,orientation,essay,relationship_type,aadhaar
+1,Vijay Seth,54,taken,female,straight,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,045526897574
+2,Gautam Chowdhury,51,taken,male,homo,Looking for a kind-hearted person who enjoys reading historical novels and writing,relationship,793979148350
+3,Sanjay Reddy,51,taken,female,homo,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,804325124819
+4,Gautam Joshi,54,taken,female,homo,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,friendship,714670501049
+5,Lata Malhotra,46,single,male,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,relationship,850018204650
+6,Ajay Paul,41,taken,female,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,friendship,445246444992
+7,Sanjay Singh,36,taken,male,homo,Looking for a kind-hearted person who enjoys reading historical novels and writing,relationship,048023007176
+8,Deepika Mehta,37,single,female,homo,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,friendship,991552105480
+9,Asha Patel,51,single,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,644126515111
+10,Geeta Bose,39,single,male,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,relationship,213850769204
+11,Anita Kumar,51,single,female,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,397090374154
+12,Priya Sharma,58,taken,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,128665737378
+13,Rani Bose,51,taken,female,straight,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,221922441954
+14,Ravi Verma,51,taken,female,straight,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,504891098988
+15,Anil Das,36,taken,female,homo,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,relationship,570930702375
+16,Shreya Mishra,36,taken,male,homo,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,967197262619
+17,Suresh Chowdhury,56,taken,female,straight,Looking for a kind-hearted person who enjoys reading historical novels and writing,friendship,522864968065
+18,Anita Malhotra,57,single,male,homo,Looking for a kind-hearted person who has a keen interest in politics and social issues,friendship,980383928135
+19,Rani Seth,39,taken,female,straight,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,relationship,177029845391
+20,Ravi Mehta,35,single,male,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,754804545563
+21,Rajesh Malhotra,35,single,male,straight,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,relationship,768622743751
+22,Vijay Ali,53,taken,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,335507528179
+23,Vijay Iyer,36,single,female,straight,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,245953230300
+24,Anjali Rao,55,taken,female,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,954320517946
+25,Simran Ali,46,single,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,917130480875
+26,Lata Patel,40,taken,female,homo,Looking for a kind-hearted person who enjoys reading historical novels and writing,relationship,620414781220
+27,Neha Chowdhury,57,single,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,friendship,757842444293
+28,Shreya Joshi,38,taken,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,friendship,898177672506
+29,Rani Reddy,57,taken,male,homo,Looking for a kind-hearted person who has a keen interest in politics and social issues,friendship,080061477262
+30,Suresh Mehta,45,taken,female,homo,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,friendship,552627930363
+31,Meera Verma,58,taken,female,straight,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,580460351949
+32,Anjali Iyer,51,taken,male,straight,Looking for a kind-hearted person who is active in local community services and social causes,relationship,055373774312
+33,Deepika Singh,40,single,male,homo,Looking for a kind-hearted person who is passionate about education and lifelong learning,relationship,233943975576
+34,Priya Kumar,58,single,female,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,997180733474
+35,Asha Das,39,single,male,homo,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,790985278560
+36,Anjali Iyer,54,taken,female,homo,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,449356805627
+37,Lata Bose,36,single,male,homo,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,friendship,484893849823
+38,Priya Das,40,taken,female,straight,Looking for a kind-hearted person who enjoys reading historical novels and writing,friendship,895161102578
+39,Anita Singh,56,taken,male,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,635470059140
+40,Meera Mishra,45,single,female,straight,Looking for a kind-hearted person who is active in local community services and social causes,relationship,603803557060
+41,Suresh Reddy,50,single,male,straight,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,627207210211
+42,Meera Reddy,50,taken,female,straight,Looking for a kind-hearted person who is active in local community services and social causes,friendship,501523076629
+43,Manish Mishra,35,single,female,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,921066167086
+44,Arjun Iyer,43,taken,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,276758422071
+45,Suresh Nair,40,taken,male,straight,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,277334546169
+46,Karan Chowdhury,50,taken,female,homo,Looking for a kind-hearted person who is active in local community services and social causes,friendship,606422311043
+47,Arjun Sharma,37,taken,male,straight,Looking for a kind-hearted person who enjoys reading historical novels and writing,relationship,912663445814
+48,Ravi Joshi,54,taken,female,straight,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,239570976012
+49,Karan Sharma,38,single,male,homo,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,087186855399
+50,Rani Reddy,53,single,female,straight,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,164514938510
+51,Geeta Paul,37,taken,female,straight,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,485964954857
+52,Rahul Verma,53,taken,female,straight,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,relationship,184690949150
+53,Deepika Mehta,54,single,female,homo,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,relationship,243294730672
+54,Deepak Sharma,41,single,female,homo,Looking for a kind-hearted person who is passionate about education and lifelong learning,relationship,516755470933
+55,Anil Gupta,54,taken,female,homo,Looking for a kind-hearted person who enjoys reading historical novels and writing,relationship,223018914887
+56,Pooja Joshi,43,single,male,straight,Looking for a kind-hearted person who is passionate about education and lifelong learning,relationship,008798622142
+57,Lata Ali,35,taken,male,straight,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,relationship,512400986072
+58,Shreya Joshi,42,single,male,homo,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,740645578189
+59,Karan Reddy,41,taken,female,straight,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,899606945964
+60,Rani Patel,52,single,female,straight,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,682716136219
+61,Amit Mishra,42,taken,female,homo,Looking for a kind-hearted person who is active in local community services and social causes,friendship,607212479666
+62,Ajay Gupta,35,single,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,703581091629
+63,Deepak Bose,45,single,male,straight,Looking for a kind-hearted person who is active in local community services and social causes,friendship,161263048789
+64,Deepika Mehta,59,taken,male,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,863400271314
+65,Amit Mehta,59,single,female,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,relationship,804808739445
+66,Rajesh Chowdhury,52,taken,male,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,677186337354
+67,Meera Mehta,57,single,male,homo,Looking for a kind-hearted person who is active in local community services and social causes,friendship,291898092754
+68,Amit Gupta,44,taken,female,homo,Looking for a kind-hearted person who practices yoga and meditation for wellness,friendship,456082390921
+69,Lata Rao,37,single,male,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,107225788341
+70,Vijay Ali,41,taken,female,straight,Looking for a kind-hearted person who enjoys cricket and Bollywood movies,friendship,872828198784
+71,Suresh Chowdhury,50,single,male,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,friendship,175749154401
+72,Lata Das,50,taken,female,homo,Looking for a kind-hearted person who is active in local community services and social causes,relationship,729277170572
+73,Shreya Nair,59,single,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,708849356498
+74,Rahul Joshi,54,taken,female,homo,Looking for a kind-hearted person who is active in local community services and social causes,relationship,269946131610
+75,Nikhil Seth,51,taken,female,homo,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,807172526981
+76,Gautam Singh,36,taken,male,straight,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,453331305095
+77,Anita Gupta,35,single,female,straight,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,059711323605
+78,Ajay Joshi,50,taken,female,homo,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,296911302866
+79,Arjun Chowdhury,46,single,female,straight,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,313520744352
+80,Sanjay Singh,39,taken,male,homo,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,relationship,842095120871
+81,Arjun Joshi,39,single,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,friendship,780471362479
+82,Anil Malhotra,57,taken,male,straight,Looking for a kind-hearted person who is active in local community services and social causes,friendship,238603385855
+83,Asha Patel,43,single,female,straight,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,friendship,441770741158
+84,Pooja Nair,43,single,male,homo,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,058752780855
+85,Anita Kumar,37,taken,male,homo,Looking for a kind-hearted person who loves traveling within India and learning about different cultures,relationship,309710100803
+86,Shreya Bose,53,single,female,homo,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,relationship,956156991196
+87,Rani Seth,50,single,male,straight,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,072585868177
+88,Anita Paul,50,taken,female,homo,Looking for a kind-hearted person who is active in local community services and social causes,friendship,136335959289
+89,Lata Joshi,37,single,female,homo,Looking for a kind-hearted person who is passionate about education and lifelong learning,relationship,156829263764
+90,Anita Sharma,54,single,female,homo,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,621512547829
+91,Amit Seth,58,single,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,225060497343
+92,Arjun Ali,56,taken,male,homo,Looking for a kind-hearted person who has a keen interest in politics and social issues,friendship,371028394131
+93,Deepak Joshi,58,single,female,homo,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,135692295217
+94,Sunita Reddy,35,taken,female,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,402973691644
+95,Anil Ali,58,single,male,homo,Looking for a kind-hearted person who is a tech enthusiast and enjoys discussing emerging technologies,friendship,585768316508
+96,Anita Gupta,54,single,female,homo,Looking for a kind-hearted person who appreciates classical music and dance performances,relationship,812440773692
+97,Amit Malhotra,45,single,female,straight,Looking for a kind-hearted person who is passionate about education and lifelong learning,friendship,599804370853
+98,Pooja Bose,51,taken,female,homo,Looking for a kind-hearted person who likes cooking traditional Indian dishes and exploring new cuisines,friendship,844400775311
+99,Geeta Chowdhury,42,single,male,straight,Looking for a kind-hearted person who is active in local community services and social causes,friendship,843906254440
+100,Anil Ali,38,single,male,straight,Looking for a kind-hearted person who has a keen interest in politics and social issues,relationship,029341718186
