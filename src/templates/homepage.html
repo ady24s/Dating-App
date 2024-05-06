@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Matchmaking Service Homepage</title>
     <style>
-        div {
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #7f5a83, #0d324d);
+        }
+
+        /* Container styling */
+        .container {
             text-align: center;
-            margin-top: 20%;
+            padding: 20px 30px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            max-width: 420px;
+            margin-top: 20px;
         }
+
+        /* Header and paragraph styling */
+        h1 {
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Button styling */
+        a {
+            text-decoration: none;
+        }
+
         button {
-            padding: 10px 20px;
+            padding: 14px 30px;
             background-color: #4CAF50;
-            color: white;
+            color: #fff;
             border: none;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
+
         button:hover {
             background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Welcome to the Matchmaking Service</h1>
-        <p>Find the perfect match that suits your preferences.</p>
+    <h1>PAL</h1>
+    <h2>Embracing Diversity in Connection</h2>
+    <div class="container">
         <a href="/login"><button>Login</button></a>
     </div>
 </body>

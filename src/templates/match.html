@@ -3,6 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Match Results</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(120deg, #7f5a83, #0d324d);
+            color: #ffffff;
+        }
+
+        /* Header styling */
+        h2 {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Profiles container styling */
+        div {
+            background-color: rgba(255, 255, 255, 0.85); /* Increased transparency */
+            padding: 30px; /* Increased padding for more space */
+            border-radius: 8px;
+            max-width: 800px; /* Larger max-width */
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            text-align: left;
+            color: #333;
+        }
+
+        /* Back link styling */
+        a {
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+    </style>
 </head>
 <body>
     <h2>Matching Profiles</h2>
